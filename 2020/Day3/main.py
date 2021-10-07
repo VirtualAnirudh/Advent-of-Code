@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 grid = open("input.txt", "r")
-grid = grid.readlines()
+grid = [x.strip() for x in grid.readlines()]
 
-row_len = len(grid[0]) - 1
+row_len = len(grid[0])
 slopes = [(1,1), (3,1), (5,1), (7,1), (1,2)]
 
 res_1 = []
