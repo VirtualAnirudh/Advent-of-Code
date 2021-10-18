@@ -15,7 +15,6 @@ seat_ids.sort()
 res_1 = seat_ids[-1]
 
 # Part 2
-
 ap_sum = (len(seat_ids) + 1) * ((seat_ids[0] + seat_ids[-1]) / 2) # Sum of AP -> number of terms * (first term + last term)/2
 res_2 = int(ap_sum - sum(seat_ids))
 
