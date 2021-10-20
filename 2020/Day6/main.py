@@ -2,13 +2,12 @@
 
 answers = open("input.txt", "r").read().split("\n\n")
 
-res_1 = 0
-res_2 = 0
-
 # Part 1
 res_1 = sum([len(set(answer.replace("\n", ""))) for answer in answers])
 
 # Part 2
+res_2 = 0
+
 for answer in answers:
     answer = [set(x) for x in answer.strip().split("\n")]
     s1 = answer[0]
